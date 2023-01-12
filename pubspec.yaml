@@ -75,6 +75,8 @@ flutter:
     - images/kaua.jpeg
     - images/mercadolivre.jpeg
     - images/mercadolivre1.png
+    - images/arthur.jpg
+    
 
   # To add assets to your application, add an assets section, like this:
   # assets:

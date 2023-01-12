@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/conversa/coversa.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/menssagens.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/mercadolivre.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/primeiroevento.dart';
 import 'package:asuka/asuka.dart' as asuka;

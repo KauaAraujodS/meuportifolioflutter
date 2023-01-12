@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/conversa/coversa.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/line_chart_sample1.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/menssagens.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/mercadolivre.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/segundatela.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/teladelogin.dart';
@@ -314,18 +316,18 @@ class _PrimeiraWidgetState extends State<PrimeiraWidget> {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => LineChartSample1(),
+                        builder: (context) => MeMensages(),
                       ));
                 },
                 child: Container(
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     gradient: LinearGradient(
-                      begin: Alignment.topCenter,
-                      end: Alignment.bottomCenter,
+                      begin: Alignment.centerLeft,
+                      end: Alignment.centerRight,
                       colors: [
-                        Color(0xff00c6e9),
-                        Color(0xff08df9c),
+                        Color(0xffe7edfe),
+                        Color(0xffd4dffe),
                       ],
                     ),
                   ),
@@ -354,7 +356,7 @@ class _PrimeiraWidgetState extends State<PrimeiraWidget> {
                           ),
                         ],
                       ),
-                      Text("Tela Web"),
+                      Text("Mensagens"),
                     ],
                   ),
                 ),
