@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/line_chart_sample1.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/mercadolivre.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/segundatela.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/teladelogin.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/telaweb.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/usuarioavancado.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/usuarios.dart';
 
@@ -245,6 +247,114 @@ class _PrimeiraWidgetState extends State<PrimeiraWidget> {
                         ],
                       ),
                       Text("Mercado Livre"),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 30),
+              child: MaterialButton(
+                onPressed: () {
+                  //redirecionando telas
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TelaWeb(),
+                      ));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0xff00c6e9),
+                        Color(0xff08df9c),
+                      ],
+                    ),
+                  ),
+                  width: MediaQuery.of(context).size.width * 1,
+                  height: 70,
+                  margin: EdgeInsets.only(top: 10),
+                  // decoration: BoxDecoration(
+                  //     color: Colors.purple,
+                  //     borderRadius: BorderRadius.circular(10)),
+                  // width: MediaQuery.of(context).size.width * 1,
+                  // height: 70,
+                  // margin: EdgeInsets.only(left: 10, right: 10, top: 50),
+                  padding: EdgeInsets.all(10),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Nome:",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          Text(
+                            "11/01/23",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                      Text("Tela Web"),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 30),
+              child: MaterialButton(
+                onPressed: () {
+                  //redirecionando telas
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => LineChartSample1(),
+                      ));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0xff00c6e9),
+                        Color(0xff08df9c),
+                      ],
+                    ),
+                  ),
+                  width: MediaQuery.of(context).size.width * 1,
+                  height: 70,
+                  margin: EdgeInsets.only(top: 10),
+                  // decoration: BoxDecoration(
+                  //     color: Colors.purple,
+                  //     borderRadius: BorderRadius.circular(10)),
+                  // width: MediaQuery.of(context).size.width * 1,
+                  // height: 70,
+                  // margin: EdgeInsets.only(left: 10, right: 10, top: 50),
+                  padding: EdgeInsets.all(10),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Nome:",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          Text(
+                            "11/01/23",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                      Text("Tela Web"),
                     ],
                   ),
                 ),
