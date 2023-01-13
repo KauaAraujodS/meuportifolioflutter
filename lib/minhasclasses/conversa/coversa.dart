@@ -55,7 +55,7 @@ class _coversaMensagemState extends State<coversaMensagem> {
                     ),
                     child: CircleAvatar(
                       radius: 40,
-                      backgroundImage: AssetImage("images/kaua.jpeg"),
+                      backgroundImage: AssetImage("images/arthur.jpg"),
                     ),
                     margin: EdgeInsets.only(right: 20),
                   ),
@@ -66,7 +66,7 @@ class _coversaMensagemState extends State<coversaMensagem> {
                       Row(
                         children: [
                           Text(
-                            'Kauã Araujo',
+                            'Arthur',
                             style: TextStyle(
                                 fontSize: 25, fontWeight: FontWeight.bold),
                           ),
