@@ -5,6 +5,7 @@ import 'package:minhaprimieiraaplicacao/minhasclasses/conversa/coversa.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/line_chart_sample1.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/menssagens.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/mercadolivre.dart';
+import 'package:minhaprimieiraaplicacao/minhasclasses/novaTeladia_13_01_23.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/segundatela.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/teladelogin.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/telaweb.dart';
@@ -357,6 +358,59 @@ class _PrimeiraWidgetState extends State<PrimeiraWidget> {
                         ],
                       ),
                       Text("Mensagens"),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(top: 30),
+              child: MaterialButton(
+                onPressed: () {
+                  //redirecionando telas
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => novaTelaDia13(),
+                      ));
+                },
+                child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: [
+                        Color(0xff6559d9),
+                      ],
+                    ),
+                  ),
+                  width: MediaQuery.of(context).size.width * 1,
+                  height: 70,
+                  margin: EdgeInsets.only(top: 10),
+                  // decoration: BoxDecoration(
+                  //     color: Colors.purple,
+                  //     borderRadius: BorderRadius.circular(10)),
+                  // width: MediaQuery.of(context).size.width * 1,
+                  // height: 70,
+                  // margin: EdgeInsets.only(left: 10, right: 10, top: 50),
+                  padding: EdgeInsets.all(10),
+                  child: Column(
+                    children: [
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Nome:",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                          Text(
+                            "13/01/23",
+                            style: TextStyle(color: Colors.black),
+                          ),
+                        ],
+                      ),
+                      Text("Nova telas"),
                     ],
                   ),
                 ),

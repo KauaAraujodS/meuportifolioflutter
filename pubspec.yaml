@@ -76,6 +76,11 @@ flutter:
     - images/mercadolivre.jpeg
     - images/mercadolivre1.png
     - images/arthur.jpg
+    - images/novatela.jpg
+    - images/fundobranco.png
+    - images/fundobrancofinal.png
+    
+
     
 
   # To add assets to your application, add an assets section, like this:
