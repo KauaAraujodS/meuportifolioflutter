@@ -41,6 +41,9 @@ dependencies:
   fl_chart: ^0.55.2
   responsive_framework: any
   chart_sparkline: ^1.0.12
+  http: ^0.13.5
+  flutter_osm_plugin: ^0.50.0-alpha.5
+  pointer_interceptor: ^0.9.3+3
 
 
 
@@ -79,6 +82,7 @@ flutter:
     - images/novatela.jpg
     - images/fundobranco.png
     - images/fundobrancofinal.png
+    - images/mapa.png
     
 
     

@@ -1,4 +1,8 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:minhaprimieiraaplicacao/appdecoleta.dart';
+import 'package:minhaprimieiraaplicacao/consultacep/consultacep.dart';
+import 'package:minhaprimieiraaplicacao/mapa.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/conversa/coversa.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/menssagens.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/mercadolivre.dart';
@@ -12,6 +16,6 @@ void main() {
     builder: asuka.builder,
     debugShowCheckedModeBanner: false,
     // home: MercadoLivre(),
-    home: novaTelaDia13(),
+    home: telaMapa(),
   ));
 }
