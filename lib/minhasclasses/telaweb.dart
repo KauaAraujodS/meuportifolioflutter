@@ -1231,10 +1231,6 @@ class _TelaWebState extends State<TelaWeb> {
                           ),
                         ],
                       ),
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(15),
-                      ),
                     ),
                   ),
                   StaggeredGridTile.extent(

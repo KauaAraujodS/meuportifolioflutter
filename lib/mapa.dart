@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_osm_plugin/flutter_osm_plugin.dart';
+import 'package:minhaprimieiraaplicacao/appdecoleta.dart';
 import 'package:minhaprimieiraaplicacao/minhasclasses/primeiroevento.dart';
+import 'package:minhaprimieiraaplicacao/selecionartiopodecleta.dart';
 import 'package:pointer_interceptor/pointer_interceptor.dart';
 
 class telaMapa extends StatefulWidget {
@@ -24,6 +26,12 @@ class _telaMapaState extends State<telaMapa> {
       west: 5.9559113,
     ),
   );
+
+  @override
+  void dispose() {
+    //controller.dispose()
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +105,12 @@ class _telaMapaState extends State<telaMapa> {
                       ),
                       child: IconButton(
                         onPressed: (() {
-                          Navigator.of(context).pop();
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => appDeColeta(),
+                            ),
+                          );
                         }),
                         icon: Icon(
                           Icons.arrow_back_rounded,
@@ -249,11 +262,13 @@ class _telaMapaState extends State<telaMapa> {
                                 children: [
                                   GestureDetector(
                                     onTap: () {
+                                      controller.dispose();
+
                                       Navigator.push(
                                         context,
                                         MaterialPageRoute(
                                           builder: (context) =>
-                                              PrimeiraWidget(),
+                                              SelecionarTipoDeColeta(),
                                         ),
                                       );
                                     },
